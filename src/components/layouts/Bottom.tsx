@@ -23,13 +23,13 @@ export default function BottomCards() {
   ];
 
   return (
-    <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
       {cards.map((card) => (
         <div key={card.id} className="flex space-x-4 items-start">
           <img
             src={card.image}
             alt={card.title}
-            className="w-24 h-24 object-cover rounded-lg "
+            className="w-32 h-full object-cover rounded-lg "
           />
           <div>
             <h4 className="text-2xl font-bold text-red-600">{card.id}</h4>
